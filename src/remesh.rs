@@ -22,5 +22,7 @@ impl Remesher {
 
             std::mem::swap(&mut mesh.indices, &mut new_indices);
         }
+
+        mesh.recalculate_normals();
     }
 }
